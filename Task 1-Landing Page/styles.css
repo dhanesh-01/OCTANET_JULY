@@ -1,0 +1,708 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: #fff;
+    line-height: 1.6;
+}
+
+#header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 92vh;
+    background: url('back.jpg') no-repeat center center/cover;
+    position: relative;
+    overflow:hidden;
+}
+
+.header-content {
+    position: absolute;
+    left: 22vh;
+    top: 11vh;
+    z-index: 2;
+    max-width: 600px;
+    text-align: left;
+}
+
+.header-content h1 {
+    font-size: 50px;
+    margin: 0;
+    font-weight: 700;
+    color: white;
+    font-family: 'Arial', sans-serif; /* Replace with the correct font family */
+}
+
+.header-content h1 span {
+    color: #ff6600; /* Adjust to match the orange color */
+}
+
+.header-content p {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #fff; /* Adjust to white color */
+    line-height: 1.5;
+    font-family: 'Arial', sans-serif; /* Replace with the correct font family */
+}
+
+  
+  .character-image {
+    position: absolute;
+    
+    left: 50px; /* Adjust the right position */
+    bottom: 50px; /* Adjust the bottom position */
+  
+}
+
+.character-image img {
+    border-radius: 8px;
+    transform: translate(-58px, 27%);
+    width: 500px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain;
+    opacity: 0.9; /* Adjust the opacity for transparency */
+}
+
+.laptop{
+    position: absolute;
+    right: -2px;
+    top: -258px;/* Adjust the bottom position */
+  
+}
+
+.laptop img {
+    width: 700px;
+    height: auto;
+    object-fit: contain;
+    opacity: 0.9; /* Adjust the opacity for transparency */
+}
+
+
+.anime-section {
+    position: relative;
+    height: 96vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    
+}
+
+.anime-content {
+    position: absolute;
+    left: 6vh;
+    bottom: 14vh;
+    z-index: 2;
+    max-width: 602px;
+    text-align: left;
+}
+
+.anime-content h1 {
+    font-size: 50px;
+    margin: 0;
+    font-weight: 700;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+.anime-content p {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #fff;
+    line-height: 1.5;
+    font-family: 'Arial', sans-serif;
+}
+
+.anime-buttons {
+    margin-top: 20px;
+
+}
+
+.anime-buttons button {
+    background: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.anime-buttons button:hover {
+    background: #e65c00;
+}
+
+.search-bar-container {
+    top: 13vh;
+    right: 49vh;
+    position: absolute;
+}
+
+.search-bar {
+    width: 80vh;
+    padding: 10px 35px 10px 10px;
+    font-size: 18px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+.search-bar::placeholder {
+    color: white;
+    opacity: 0.7;
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    opacity: 0.7;
+}
+
+.icon{
+    position: absolute;
+    right: 1vh;
+    top: 1vh;
+}
+
+.anime-name {
+    position: absolute;
+    left: 5vh;
+    top: 8.5vh;
+    z-index: 2;
+    max-width: 592px;
+    text-align: left;
+}
+
+.anime-name h1 {
+    font-size: 9vh;
+    margin: 0;
+    font-weight: 700;
+    color: white;
+    font-family: 'Arial', sans-serif; /* Replace with the correct font family */
+}
+
+.anime-name h1 span {
+    color: #ff6600; /* Adjust to match the orange color */
+}
+
+.section {
+    padding: 2em;
+}
+
+.section h2 {
+    margin-bottom: 1em;
+}
+
+
+.special-for-you {
+    position: relative;
+    height: 90vh;
+    background-color: black;
+}
+
+.special-for-you h2 {
+    position: absolute;
+    top: 1vh;
+    left: 8vh;
+    font-size: 34px;
+}
+
+.special-for-you .cards {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 13vh;
+    left: 3vh;
+    right: 1vh;
+}
+
+.special-for-you .card {
+    background-color: #2a2a2a;
+    border-radius: 0.5em;
+    flex: 0 1 15%;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    height: 355px; /* Adjust the height as needed */
+}
+
+.special-for-you .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+}
+
+.special-for-you .card p {
+    margin: 0;
+    padding: 0.5em;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.special-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.special-buttons button {
+    background-color: #FF4500;
+    border: none;
+    padding: 1em 2em;
+    margin: 0 0.5em;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 0.3em;
+}
+.special-buttons  .b1{
+    background-color: #333333;
+    position: absolute;
+    bottom: 2vh;
+    left: 6vh;
+    padding-left: 17vh;
+    padding-right: 15vh;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.special-buttons .b1 h1{
+    color:#FF4500;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.special-buttons  .b2{
+    background-color: #FF4500;
+    position: absolute;
+    left: 69vh;
+    bottom: 2vh;
+    padding-left: 15vh;
+    padding-right: 15vh;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.special-buttons .b2 h1{
+
+    font-size: 30px;
+    font-weight: bolder;
+}
+.special-buttons  .b3{
+    background-color: #333333;
+    position: absolute;
+    right: 5vh;
+    bottom: 2vh;
+    padding-left: 12vh;
+    padding-right: 8vh;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.special-buttons .b3 h1{
+    color:#FF4500;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+
+
+.continue-watching {
+    position: relative;
+    margin-top: 25px;
+    height: 63vh;
+    padding: 2em;
+    background-color: black;
+}
+
+.continue-watching h2 {
+    margin-bottom: 20px;
+    margin-left: 8px;
+    margin-top: 16px;
+    color: white;
+    font-size: 34px;
+}
+
+.continue-watching .cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.continue-watching .card {
+    background-color: #2a2a2a;
+    border-radius: 0.5em;
+    flex: 1 1 23%; /* Adjust the flex basis to control the width */
+    text-align: center;
+    position: relative;
+    height: 175px; /* Adjust the height as needed */
+    color: white;
+}
+
+.continue-watching .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+}
+
+.continue-watching .card-info {
+    padding: 0.5em;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em;
+    position: absolute;
+    bottom: 5vh;
+    width: 100%;
+}
+
+.continue-watching .card-info .time{
+    position: absolute;
+    bottom: -5vh;
+    left: 1vh;
+    background-color: #707070;
+}
+.continue-watching .card-info .ptext{
+    position: absolute;
+    bottom: -11vh;
+    left: -1.5vh;
+    font-size: 20px;
+}
+.continue-watching .card-info .rating{
+    position: absolute;
+    bottom: -14vh;
+    left: -1vh;
+    opacity: 80.8%;
+}
+
+.most-popular{
+    position: relative;
+    height: 63vh;
+}
+ .most-popular h2{
+    position: absolute;
+    top: -4vh;
+    left: 6vh;
+    font-size: 34px;
+ }
+.most-popular .cards {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 7vh;
+    left: 1.5vh;
+    right: 7vh;
+
+}
+
+.most-popular .card {
+    background-color: #000000;
+    border-radius: 0.5em;
+    flex: 0 1 15%;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    height: 330px; /* Adjust the height as needed */
+}
+
+.most-popular .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+}
+
+.most-popular .card p {
+    margin: 0;
+    padding: 0.5em;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+
+.cards {
+    display: flex;
+    padding-bottom: 1em;
+}
+
+.card {
+    background-color: #2a2a2a;
+    border-radius: 0.5em;
+    margin: 0 0.5em;
+    flex: 0 0 150px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+}
+
+.card p {
+    margin: 0.5em 0;
+    padding: 0 0.5em;
+}
+
+
+.categories {
+    position: relative;
+    padding: 2em;
+    background-color: #000000;
+    text-align: center;
+}
+
+.categories h2 {
+    position: absolute;
+    top: 1vh;
+    left: 7vh;
+    color: white;
+    font-size: 34px;
+    margin-bottom: 1em;
+}
+
+.categories .categories-container {
+    position: absolute;
+    top: 11vh;
+    left: 4vh;
+    right: 7vh;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.categories .category {
+    background-color: #2a2a2a;
+    border-radius: 0.5em;
+    width: 30%;
+    padding: 1em;
+    box-sizing: border-box;
+    margin: 1em 0;
+}
+
+.categories .category h3 {
+    color: white;
+    font-size: 23px;
+    margin-bottom: 0.5em;
+}
+
+.categories .category-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 1em;
+}
+
+.categories .category-cards img {
+    border-radius: 0.5em;
+    width: 30%;
+    height: 29vh;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.categories .see-all {
+    position: absolute;
+    right: 11vh;
+    top: -2vh;
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-top: 1em;
+    font-size: 31px;
+}
+
+.categories .see-all:hover {
+    text-decoration: underline;
+}
+
+
+/* Footer styling */
+.bottom {
+    position: relative;
+    height: 94vh;
+}
+footer {
+    background-color: #121212; /* Background color of the footer */
+    color: white; /* Text color */
+    padding: 2em 0; /* Padding around the footer content */
+    text-align: center; /* Center align text */
+    font-family: Arial, sans-serif; /* Font family for the footer */
+}
+
+.footer-container {
+    position: absolute;
+    bottom: -11vh;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 1em;
+    margin-bottom: 1em;
+}
+
+ .footer-social, .footer-app {
+    flex: 1; /* Each section takes equal space */
+    margin: 1em; /* Space around each section */
+    padding: 1em; /* Padding inside each section */
+    border: 1px solid #333; /* Border for each section */
+    border-radius: 10px; /* Rounded corners for each section */
+    background-color: #1c1c1c; /* Background color for sections */
+}
+.footer-about{
+    position: relative;
+    top: -13vh;
+    left: 10vh;
+}
+
+.footer-about h2 {
+    color: #ff6600;
+    font-size: 40px;
+}
+
+.footer-about h2 span {
+    color: white; /* Color for the highlighted part of the heading */
+}
+
+.footer-about p {
+    position: absolute;
+    width: 61vh;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.footer-social{
+    position: relative;
+    top: -14vh;
+    left: 42vh;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: #000000;
+}
+
+.footer-app{
+    position: relative;
+    right: -44vh;
+    width: 57vh;
+    top: -14vh;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.footer-social h3, .footer-app h3 {
+    font-size: 25px;
+    position: relative;
+    left: 6vh;
+    width: 53vh;
+    margin-right: 26px;
+    margin-bottom: 11px;
+}
+
+.social-icons .circle-icon {
+    background-color: #333333;
+    padding:12px;
+    border-radius: 50%;
+}
+
+.app-icons{
+    position: relative;
+    padding-top: 7px;
+}
+
+.social-icons, .app-icons {
+    display: flex; /* Use flexbox for icons */
+    justify-content: center; /* Center align icons */
+    gap: 1em; /* Space between icons */
+}
+
+.social-icons a, .app-icons a {
+    display: inline-block; /* Display icons inline */
+    /*width: 40px;  Width of the icons */
+    height: 40px; /* Height of the icons */
+    /*background-color: #333; /* Background color for icons */
+    /*border-radius: 50%; /* Make icons circular */
+    display: flex; /* Use flexbox for icon alignment */
+    align-items: center; /* Center align icon vertically */
+    justify-content: center; /* Center align icon horizontally */
+}
+.google{
+    position: absolute;
+    left: 1vh;
+    height: 23vh;
+}
+.apple{
+    position: absolute;
+    right: 0vh;
+    height: 24vh;
+}
+.social-icons a img {
+    width: 50%; /* Icon size relative to the container */
+    height: 50%; /* Icon size relative to the container */
+    object-fit: contain; /* Ensure icons maintain their aspect ratio */
+}
+
+.footer-links {
+    position: absolute;
+    height: 8vh;
+    width: 134vh;
+    bottom: -19vh;
+    left: 18vh;
+    margin: 2em 5px 32px;
+}
+
+.footer-links a {
+    color: white;
+    margin: 2px 1em;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.footer-links .caption{
+    position: absolute;
+    top: 0vh;
+    font-size: 24px;
+    font-weight: 500;
+    right: -24vh;
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
+
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: center; /* Center align items */
+    }
+
+    .footer-about, .footer-social, .footer-app {
+        margin-bottom: 1em; /* Space below each section */
+    }
+}
